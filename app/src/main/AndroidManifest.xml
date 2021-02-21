@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mytorch">
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application android:name=".MyApp"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:theme="@style/AppTheme" android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name" android:icon="@drawable/flash_light"
+        android:allowBackup="true">
+        <activity android:name=".Settings2Activity"
+        android:theme="@style/settingtheme" android:label="@string/title_activity_settings2"/>
+        <activity android:name=".MainActivity4"
+            android:theme="@style/splashScreenTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".FloatingWidgetShowService"
+        android:exported="false"
+        android:enabled="true"/>
+    </application>
+
+</manifest>

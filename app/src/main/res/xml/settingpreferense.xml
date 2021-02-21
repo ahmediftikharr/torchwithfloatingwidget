@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat
+        app:key="My torch"
+        app:title="Floating Bubble Button"
+        app:summary="Switch off light with pop up window or bubble button"
+        android:icon="@drawable/flashpreficon"
+        />
+    <SwitchPreferenceCompat
+        app:key="show_compass"
+        app:title="Compass"
+        app:summary="for directions"
+        android:icon="@drawable/newcomp2"
+        android:defaultValue="true"
+        />
+    <SwitchPreferenceCompat
+        app:key="sound_key"
+        app:title="Sound"
+        android:icon="@drawable/ic_speaker_phone_black_24dp"
+        android:defaultValue="true"
+        />
+
+     <Preference
+          android:title="Share App"
+          android:key="Share_app"
+          android:icon="@drawable/ic_share_black_24dp"
+
+       />
+      <Preference
+            android:title="Rate App"
+            android:key="Rate_us"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+       />
+</PreferenceScreen>

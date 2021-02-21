@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/MainParentRelativeLayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/alphaBlack"
+
+        >
+
+        <!-- This layout is the Collapsed layout -->
+        <RelativeLayout
+            android:id="@+id/Layout_Collapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@color/alphaBlack">
+
+            <ImageView
+                android:id="@+id/Logo_Icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/flash_light"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:id="@+id/Logo_Icon_toggle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/flash_light"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/Widget_Close_Icon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/close_icon" />
+
+
+        </RelativeLayout>
+
+
+
+        <!-- This layout is expended layout-->
+
+
+    </RelativeLayout>
+
+</FrameLayout>
